@@ -163,16 +163,12 @@ ul li{
     background-color: #28235dcc;
 }
 
-/* @media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-    text-align: center;
+ @media (max-width: 768px) {
+  h1{
+    font-size: 47px;
+    font-weight: 500;
   }
-  img {
-    width: 100%;
-    height: auto;
-  }
-} */
+} 
 
 
 .testi{
