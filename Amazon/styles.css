@@ -11,11 +11,11 @@
  }
 
  .flex{
-    display: flex;
+    display: flex; 
  }
 
  .center{
-    align-items: center;
+    align-items: center; 
  }
 
  .content-center{
@@ -162,12 +162,20 @@
     flex-wrap: wrap;
 }
 .box{
-    margin: 10px;
+    /* margin: 10px;
     height: 400px;
     width: 23%;
     background-color: white;
-    padding: 20px 0 15px;
+    padding: 20px 0 15px; */
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px 0 15px;
+  height: auto;
 }
+
+
 
 .box-content{
     margin: 0px 20px;
@@ -246,3 +254,92 @@ li a{
     margin-top: 15px;
 }
 
+/* @media screen and (max-width:768px){
+   .shop-section{
+      flex-direction: column;
+   }
+   
+}
+@media  screen and (min-width:769px) and (max-width:1200px) {
+   
+} */
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pannel-ops {
+    display: none; /* hide long text options */
+  }
+
+  .panel-deals {
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== Tablet View ===== */
+@media (max-width: 768px) {
+  .shop-section {
+    justify-content: center;
+  }
+
+  .box {
+    flex: 1 1 calc(45% - 20px); /* 2 per row */
+  }
+
+  .hero-section {
+    height: 250px;
+  }
+
+  .hero-message {
+    font-size: 0.75rem;
+    width: 90%;
+  }
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-logo,
+  .nav-address,
+  .nav-search,
+  .nav-lang,
+  .sign-in,
+  .returns,
+  .cart {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .box {
+    flex: 1 1 100%; /* 1 per row */
+  }
+
+  .foot-panel-2 {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .foot-panel-2 ul {
+    margin: 10px 0;
+  }
+
+  .hero-message {
+    width: 95%;
+    font-size: 0.7rem;
+  }
+}
